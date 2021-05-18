@@ -29,3 +29,7 @@ print(div())
 def test():
     return statistics.stdev(num)
 print(test())
+
+def test1():
+    return statistics.variance(num)
+print(test1())
