@@ -25,3 +25,7 @@ import statistics
 def div():
     return statistics.median(num)/max(num)
 print(div())
+
+def test():
+    return statistics.stdev(num)
+print(test())
