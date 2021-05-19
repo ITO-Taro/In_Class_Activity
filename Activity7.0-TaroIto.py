@@ -34,6 +34,6 @@ def test1():
     return statistics.variance(num)
 print(test1())
 
-def makes10(a,b):
-    return (a==10 or b==10 or a+b==10)
-
+# def makes10(a,b):
+#     return (a==10 or b==10 or a+b==10) 
+# print(makes10)
