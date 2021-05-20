@@ -15,9 +15,9 @@ elif (type(Math(num)) == str):
 else: print(Math(num), "is indeed Tuple")
 
 # Today's (19MAY2021) work
-a = 889
-b = 50
-c = 10101
+a = 1
+b = 0
+c = 0
 def func(x, y, z):
     if (x>y and x>z and y>z) or (x>y and y==z):
         return tuple((x, y, z))
@@ -35,3 +35,33 @@ def func(x, y, z):
         print("Inconclusive")
 if (type(func(a, b, c) == tuple)):
     print (func(a, b, c), "is indedd a Tuple")
+
+
+smallestNum = 0
+middleNum = 0
+biggestNum = 0
+def sort3(l = 51, m = 50, n = 10101):
+    
+    if (l < m and l < n):
+        smallestNum = l
+    elif (m < l and m > n):
+        biggestNum = l
+    else:
+        middleNum = l
+    if (m < l and m < n):
+        smallestNum = m
+    elif (m > l and m > n):
+        biggestNum = m
+    else:
+        middleNum = m
+    if (n < l and n < m):
+        smallestNum = n
+    elif (n > l and n > m):
+        biggestNum = n
+    else:
+        middleNum = n
+    solution = (smallestNum, middleNum, biggestNum)
+    print(solution)
+
+print(sort3())
+
